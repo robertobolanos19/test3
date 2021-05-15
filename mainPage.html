@@ -200,7 +200,15 @@
     </script>
 
     <script src="baffle.min.js"></script>
-   
+    <script>
+        const text = baffle('.title');
+        text.set({
+            characters : '/▓░ /▓▓<█ ▒▓▓>/ ▓▒▒ ▓<██░ ▓▓▓░ ░<< ░██▒ <░▒▓',
+            speed: 128
+        });
+        text.start();
+        text.reveal(5000)
+    </script>
     </body>
 
 </html>
